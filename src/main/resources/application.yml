@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: SpringRestEmployee
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: maruthi
+    password: Maruthi123
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle11gDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 4567
